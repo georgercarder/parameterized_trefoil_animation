@@ -6,17 +6,17 @@ app.get("/", function(req, res) {
   console.log("served /index.html");
 });
 
-app.get("/css", function (req, res) {
+app.get("/trefoil/css", function (req, res) {
 	res.sendFile(__dirname + "/css/index.css");
 	console.log("served /css/index.css")
 });
 
-app.get("/script", function (req, res) {
+app.get("/trefoil/script", function (req, res) {
 	res.sendFile(__dirname + "/js/index.js");
 	console.log("served /js/index.js");
 });
 
-app.listen(4000, function(err) {
+app.listen(4001, function(err) {
 	if (err) throw err;
-	console.log("App listening on port 4000");
+	console.log("App listening on port 4001");
 });
