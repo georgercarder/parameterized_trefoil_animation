@@ -12,7 +12,9 @@ body {
   align-items: center;
 }
 
-.rotate-anim {}
+.rotate-anim {
+  will-change: transform;
+}
 
 .horz-anim {
   will-change: transform;
