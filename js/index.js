@@ -31,7 +31,7 @@
     this.x = 150 * Math.cos(this.tt);
     this.y = 550 * Math.sin(this.tt);
     this.s = 0.5 * Math.sin(2 * (this.tt + Math.PI / 2)) + 1;
-    this.Theta = ( 360 / (3 * 2 * Math.PI ) ) *this.t;
+    this.Theta = ( 360 / (3 * 2 * Math.PI ) ) * this.t;
 
     window.requestAnimationFrame(this.transBound);
   };
@@ -44,8 +44,6 @@
     //console.log(this.Theta);
     this.rotate.style.transform = "rotate(" + this.Theta + "deg)";
   };
-
-
 
   var Trefoil = new Trefoil;
 
