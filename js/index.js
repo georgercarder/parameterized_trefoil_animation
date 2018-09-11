@@ -19,10 +19,21 @@
     this.setParamsBound = this.setParams.bind(this);
     this.transBound = this.trans.bind(this);
 
-    this.setParamsInterval = setInterval(() => {
-      this.setParamsBound();
-    }, 14);
-  
+    this.on = false;
+    this.turnOnOffBound = this.turnOnOff.bind(this);
+  };
+
+  Trefoil.prototype.turnOnOff = function() {
+    
+    this.on = !this.on;
+
+    if(this.on){
+      this.setParamsInterval = setInterval(() => {
+        this.setParamsBound();
+      }, 14);
+    } else {
+      clearInterval(this.setParamsInterval);
+    };
   };
 
   Trefoil.prototype.setParams = function() {
@@ -45,6 +56,6 @@
     this.rotate.style.transform = "rotate(" + this.Theta + "deg)";
   };
 
-  var Trefoil = new Trefoil;
+  window.Trefoil = new Trefoil;
 
 })(window);
