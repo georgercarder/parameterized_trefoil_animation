@@ -2,7 +2,7 @@
   "use strict";
 
   var Trefoil = function() {  
-    console.log("hello Trefoilect");
+    //console.log("hello Trefoil");
     
     this.t = 0;
     
@@ -41,7 +41,7 @@
     this.vert.style.transform = "translateY(" + this.y + "%)";
     this.scale.style.transform = "scale(" + this.s + ")";
     
-    console.log(this.Theta);
+    //console.log(this.Theta);
     this.rotate.style.transform = "rotate(" + this.Theta + "deg)";
   };
 
