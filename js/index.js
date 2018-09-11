@@ -28,9 +28,9 @@
   Trefoil.prototype.setParams = function() {
     this.t += 0.014;
     this.tt = this.t % (2 * Math.PI); // will need to change this constant after sleep
-    this.x = 100 * Math.cos(this.tt);
-    this.y = 500 * Math.sin(this.tt);
-    this.s = 0.5 * Math.sin(this.tt + Math.PI / 2) + 1;
+    this.x = 150 * Math.cos(this.tt);
+    this.y = 550 * Math.sin(this.tt);
+    this.s = 0.5 * Math.sin(2 * (this.tt + Math.PI / 2)) + 1;
     this.Theta = ( 360 / (3 * 2 * Math.PI ) ) *this.t;
 
     window.requestAnimationFrame(this.transBound);
