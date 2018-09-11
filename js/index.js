@@ -26,7 +26,7 @@
   };
 
   Trefoil.prototype.setParams = function() {
-    this.t += 0.014;
+    this.t += 0.06;
     this.tt = this.t % (2 * Math.PI); // will need to change this constant after sleep
     this.x = 150 * Math.cos(this.tt);
     this.y = 550 * Math.sin(this.tt);
