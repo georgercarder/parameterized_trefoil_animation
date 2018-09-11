@@ -1,4 +1,4 @@
-# Ball following the parameterization of the trefoil in euclidean 3 space.
+# Ball following a parameterization of the trefoil in euclidean 3 space.
 
 #### Could be great waiting animation.
 
