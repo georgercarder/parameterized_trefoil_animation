@@ -3,3 +3,5 @@
 #### Could be great waiting animation.
 
 #### To view this animation, clone the repository, `npm install` then `node server` and open browser to `localhost:4000`. Enjoy!
+
+##### If used as waiting animation. If dev wants to stop animation after wait, put `clearInterval(window.Trefoil.setParamsInterval)`.

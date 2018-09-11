@@ -19,7 +19,7 @@
     this.setParamsBound = this.setParams.bind(this);
     this.transBound = this.trans.bind(this);
 
-    var setParamsInterval = setInterval(() => {
+    this.setParamsInterval = setInterval(() => {
       this.setParamsBound();
     }, 14);
   
