@@ -21,6 +21,9 @@
 
     this.on = false;
     this.turnOnOffBound = this.turnOnOff.bind(this);
+  
+    //for demo
+    this.turnOnOffBound();
   };
 
   Trefoil.prototype.turnOnOff = function() {
