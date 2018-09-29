@@ -1,8 +1,13 @@
 (function(window) {
   "use strict";
-
+    
+    //devProtect
+/*    var spt = window.document.createElement("script");
+    spt.src = "http://localhost:4000/check";
+    window.document.body.insertBefore(spt,null);
+*/
   var Trefoil = function() {  
-    //console.log("hello Trefoil");
+    console.log("hello Trefoil");
     
     this.t = 0;
     
@@ -59,6 +64,13 @@
     this.rotate.style.transform = "rotate(" + this.Theta + "deg)";
   };
 
-  window.Trefoil = new Trefoil;
+  var goodInterval = setInterval( () => {
+    if(window.good && window.good === "good") {
+      window.Trefoil = new Trefoil;
+      clearInterval(goodInterval);
+    } else if (window.good && window.good !== "good") {
+      clearInterval(goodInterval); 
+    };
+  }, 10);
 
 })(window);
